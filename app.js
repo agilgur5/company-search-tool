@@ -18,6 +18,7 @@ const sites = ['glassdoor', 'angellist', 'linkedin', 'crunchbase']
 sites.forEach((site) => {
   const anchor = document.createElement('a')
   anchor.setAttribute('href', baseGoogleURL + site)
+  anchor.setAttribute('target', '_blank')  // new tab
   anchor.textContent = site
   document.body.appendChild(anchor)
   document.body.appendChild(document.createElement('br'))
