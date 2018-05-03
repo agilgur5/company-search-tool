@@ -9,7 +9,8 @@ iframe.style.height = window.height // each iframe should fill the window
 const companyNameEnc = companyName.split(' ').join('+')
 const baseGoogleURL = 'https://www.google.com/search?q=' + companyNameEnc + '+'
 
-['glassdoor', 'angellist', 'linkedin', 'crunchbase'].forEach((site) => {
+const sites = ['glassdoor', 'angellist', 'linkedin', 'crunchbase']
+sites.forEach((site) => {
   const newFrame = iframe.cloneNode()
   newFrame.setAttribute('src', baseGoogleURL + site)
   document.body.appendChild(newFrame)
