@@ -14,7 +14,7 @@ header.style.margin = '0'
 document.body.appendChild(header)
 
 // add hyperlinks
-const sites = ['glassdoor', 'angellist', 'linkedin', 'crunchbase']
+const sites = ['glassdoor', 'angellist', 'linkedin', 'crunchbase', 'alexa']
 sites.forEach((site) => {
   const anchor = document.createElement('a')
   anchor.setAttribute('href', baseGoogleURL + site)
